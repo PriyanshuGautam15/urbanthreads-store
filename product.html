@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product | Urban Threads</title>
+<meta name="description" content="Shop premium essentials at Urban Threads.">
+<link rel="canonical" href="https://urbanthreads.example.com/product.html">
+<meta property="og:type" content="product">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/product-card.css">
+<link rel="stylesheet" href="assets/css/product.css">
+</head>
+<body data-page="product" data-base="">
+
+<div id="ut-header"></div>
+
+<main id="main-content">
+  <div class="container" style="padding-top:var(--space-6)">
+    <nav class="breadcrumb" id="pdp-breadcrumb" aria-label="Breadcrumb"></nav>
+
+    <div class="pdp-layout">
+      <div class="pdp-thumbs" id="pdp-thumbs"></div>
+      <div class="pdp-main-image" id="pdp-main-image"></div>
+      <div class="pdp-info" id="pdp-info"></div>
+    </div>
+
+    <div class="pdp-accordion" id="pdp-accordion" style="max-width:640px;margin-top:var(--space-16)"></div>
+
+    <section class="reviews-section" id="reviews">
+      <h2 class="text-h3" style="margin-bottom:var(--space-8)">Customer Reviews</h2>
+      <div class="reviews-summary" id="reviews-summary"></div>
+
+      <div style="display:grid;grid-template-columns:1fr 340px;gap:var(--space-12)">
+        <div id="reviews-list"></div>
+
+        <form class="card card-pad" id="review-form" style="align-self:start">
+          <h3 class="text-h5" style="margin-bottom:var(--space-4)">Write a Review</h3>
+          <div class="field">
+            <label class="label">Your Rating</label>
+            <div class="star-rating-input">
+              <input type="radio" name="rating" value="5" id="r5" checked class="sr-only"><label for="r5">★</label>
+              <input type="radio" name="rating" value="4" id="r4" class="sr-only"><label for="r4">★</label>
+              <input type="radio" name="rating" value="3" id="r3" class="sr-only"><label for="r3">★</label>
+              <input type="radio" name="rating" value="2" id="r2" class="sr-only"><label for="r2">★</label>
+              <input type="radio" name="rating" value="1" id="r1" class="sr-only"><label for="r1">★</label>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="review-author">Name</label>
+            <input class="input" id="review-author" name="author" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label class="label" for="review-title">Review Title</label>
+            <input class="input" id="review-title" name="title" placeholder="Summarize your experience" required>
+          </div>
+          <div class="field">
+            <label class="label" for="review-comment">Your Review</label>
+            <textarea class="textarea" id="review-comment" name="comment" placeholder="Tell us what you think..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Review</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="section-head"><div><p class="eyebrow">You may also like</p><h2>Related Products</h2></div></div>
+      <div class="product-grid" id="related-grid"></div>
+    </section>
+  </div>
+</main>
+
+<div id="ut-footer"></div>
+
+<script src="assets/js/core/sanity-client.js"></script>
+<script src="assets/js/core/db.js"></script>
+<script src="assets/js/core/utils.js"></script>
+<script src="assets/js/core/theme.js"></script>
+<script src="assets/js/core/toast.js"></script>
+<script src="assets/js/core/modal.js"></script>
+<script src="assets/js/core/cart.js"></script>
+<script src="assets/js/core/analytics.js"></script>
+<script src="assets/js/components/product-card.js"></script>
+<script src="assets/js/components/quick-view.js"></script>
+<script src="assets/js/components/header.js"></script>
+<script src="assets/js/components/footer.js"></script>
+<script src="assets/js/core/app-init.js"></script>
+<script src="assets/js/pages/product.js"></script>
+</body>
+</html>

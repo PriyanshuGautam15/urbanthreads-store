@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Threads | Designed for Everyday Icons</title>
+<meta name="description" content="Urban Threads is a premium clothing brand crafting considered essentials — outerwear, denim, knitwear and activewear designed for everyday icons.">
+<meta name="keywords" content="Urban Threads, premium clothing, streetwear, denim, outerwear, knitwear">
+<link rel="canonical" href="https://urbanthreads.example.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Urban Threads | Designed for Everyday Icons">
+<meta property="og:description" content="Premium essentials, considered details, made to last. Shop the new season collection.">
+<meta property="og:image" content="https://picsum.photos/seed/ut-hero/1200/630">
+<meta property="og:url" content="https://urbanthreads.example.com/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Urban Threads | Designed for Everyday Icons">
+<meta name="twitter:description" content="Premium essentials, considered details, made to last.">
+<meta name="twitter:image" content="https://picsum.photos/seed/ut-hero/1200/630">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/product-card.css">
+<link rel="stylesheet" href="assets/css/home.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "Urban Threads",
+  "description": "Designed for Everyday Icons.",
+  "url": "https://urbanthreads.example.com/"
+}
+</script>
+</head>
+<body data-page="home" data-base="">
+
+<div id="ut-header"></div>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow">New Season · 2026 Collection</p>
+        <h1 class="text-display">Designed for<br>Everyday Icons.</h1>
+        <p>Premium essentials built with considered details — cut for movement, made to outlast trends. This is Urban Threads.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-accent btn-lg">Shop New Arrivals</a>
+          <a href="about.html" class="btn btn-outline btn-lg">Our Story</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span>Scroll</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- FEATURED CATEGORIES -->
+  <section class="section container">
+    <div class="section-head">
+      <div><p class="eyebrow">Shop by category</p><h2>Featured Categories</h2></div>
+      <a href="products.html" class="btn btn-ghost">View All Categories →</a>
+    </div>
+    <div class="cat-grid" id="category-grid"></div>
+  </section>
+
+  <!-- TRENDING -->
+  <section class="section container">
+    <div class="section-head">
+      <div><p class="eyebrow">Handpicked for you</p><h2>Trending Products</h2></div>
+      <a href="products.html?filter=trending" class="btn btn-ghost">View All →</a>
+    </div>
+    <div class="product-grid" id="trending-grid"></div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section container">
+    <div class="section-head">
+      <div><p class="eyebrow">Just landed</p><h2>New Arrivals</h2></div>
+      <a href="products.html?filter=new" class="btn btn-ghost">View All →</a>
+    </div>
+    <div class="product-grid" id="new-arrivals-grid"></div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section class="container">
+    <div class="promo-banner">
+      <div class="promo-banner-bg" style="background-image:url('https://picsum.photos/seed/ut-promo/1400/900')"></div>
+      <div class="promo-banner-content">
+        <p class="eyebrow">Limited time</p>
+        <h2>Up to 30% off outerwear.</h2>
+        <p>Layer up for the season with our heritage denim and shell jackets — while stocks last.</p>
+        <a href="products.html?category=outerwear" class="btn btn-accent btn-lg">Shop Outerwear</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="section container">
+    <div class="section-head">
+      <div><p class="eyebrow">Customer favorites</p><h2>Best Sellers</h2></div>
+      <a href="products.html?filter=bestseller" class="btn btn-ghost">View All →</a>
+    </div>
+    <div class="product-grid" id="bestsellers-grid"></div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section-sm container">
+    <div class="section-head" style="justify-content:center;text-align:center;flex-direction:column">
+      <p class="eyebrow">Why Urban Threads</p>
+      <h2>Built on Quality &amp; Trust</h2>
+    </div>
+    <div class="why-grid" id="why-us-grid"></div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section container">
+    <div class="section-head">
+      <div><p class="eyebrow">Real feedback</p><h2>Customer Reviews</h2></div>
+    </div>
+    <div class="reviews-rail" id="reviews-rail"></div>
+  </section>
+
+  <!-- INSTAGRAM GALLERY -->
+  <section class="section container">
+    <div class="section-head" style="justify-content:center;text-align:center;flex-direction:column">
+      <p class="eyebrow">@urbanthreads</p>
+      <h2>Follow Our Journey</h2>
+    </div>
+    <div class="insta-grid" id="insta-grid"></div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section container">
+    <div class="newsletter-banner">
+      <h2>Join the Inner Circle</h2>
+      <p>Sign up for early access to new drops, exclusive offers, and 10% off your first order.</p>
+      <form id="home-newsletter-form">
+        <input type="email" class="input" placeholder="Enter your email" required aria-label="Email address">
+        <button type="submit" class="btn btn-accent">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<div id="ut-footer"></div>
+
+<script src="assets/js/core/sanity-client.js"></script>
+<script src="assets/js/core/db.js"></script>
+<script src="assets/js/core/utils.js"></script>
+<script src="assets/js/core/theme.js"></script>
+<script src="assets/js/core/toast.js"></script>
+<script src="assets/js/core/modal.js"></script>
+<script src="assets/js/core/cart.js"></script>
+<script src="assets/js/core/analytics.js"></script>
+<script src="assets/js/components/product-card.js"></script>
+<script src="assets/js/components/quick-view.js"></script>
+<script src="assets/js/components/header.js"></script>
+<script src="assets/js/components/footer.js"></script>
+<script src="assets/js/core/app-init.js"></script>
+<script src="assets/js/pages/home.js"></script>
+</body>
+</html>

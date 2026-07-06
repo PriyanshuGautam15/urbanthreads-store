@@ -1,0 +1,31 @@
+/* ==========================================================================
+   URBAN THREADS — CHECKOUT PAGE
+   ========================================================================== */
+
+.checkout-layout { display: grid; grid-template-columns: 1fr 420px; gap: var(--space-10); align-items: start; }
+
+.checkout-steps { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-10); }
+.checkout-step { display: flex; align-items: center; gap: var(--space-2); font-size: var(--fs-sm); color: var(--text-tertiary); }
+.checkout-step .num { width: 26px; height: 26px; border-radius: 50%; background: var(--bg-muted); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: var(--fs-xs); }
+.checkout-step.active { color: var(--text-primary); font-weight: 600; }
+.checkout-step.active .num { background: var(--accent); color: #fff; }
+.checkout-step.done .num { background: var(--success); color: #fff; }
+.checkout-step-sep { width: 32px; height: 1px; background: var(--border-default); }
+
+.checkout-order-items { max-height: 280px; overflow-y: auto; margin-bottom: var(--space-5); }
+.checkout-order-item { display: flex; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--border-subtle); font-size: var(--fs-sm); }
+.checkout-order-item img { width: 52px; height: 64px; object-fit: cover; border-radius: 6px; background: var(--bg-muted); }
+.checkout-order-item-name { font-weight: 600; }
+.checkout-order-item-meta { color: var(--text-tertiary); font-size: var(--fs-xs); }
+.checkout-order-item-price { margin-left: auto; font-weight: 600; white-space: nowrap; }
+
+.wa-preview {
+  background: #e9fbe5; border: 1px solid #cdeec5; border-radius: var(--radius-md); padding: var(--space-5);
+  font-family: var(--font-mono); font-size: var(--fs-xs); white-space: pre-wrap; line-height: var(--lh-loose);
+  color: #1f3a17; max-height: 260px; overflow-y: auto;
+}
+:root[data-theme="dark"] .wa-preview { background: #10240c; border-color: #1f3a17; color: #b9e8ab; }
+
+@media (max-width: 960px) {
+  .checkout-layout { grid-template-columns: 1fr; }
+}

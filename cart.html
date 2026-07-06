@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Bag | Urban Threads</title>
+<meta name="description" content="Review the items in your Urban Threads shopping bag before checkout.">
+<link rel="canonical" href="https://urbanthreads.example.com/cart.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body data-page="cart" data-base="">
+
+<div id="ut-header"></div>
+
+<main id="main-content">
+  <div class="container section-sm">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      <span>Your Bag</span>
+    </nav>
+    <h1 class="text-h2" style="margin-bottom:var(--space-10)">Your Bag</h1>
+
+    <div class="cart-layout">
+      <div id="cart-content"></div>
+
+      <div id="cart-summary-wrap">
+        <div class="card card-pad summary-card">
+          <h3 class="text-h5" style="margin-bottom:var(--space-4)">Order Summary</h3>
+          <form class="promo-form" id="promo-form">
+            <input type="text" class="input" id="promo-input" placeholder="Promo code (try WELCOME10)">
+            <button type="submit" class="btn btn-secondary">Apply</button>
+          </form>
+          <div id="cart-summary"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="ut-footer"></div>
+
+<script src="assets/js/core/sanity-client.js"></script>
+<script src="assets/js/core/db.js"></script>
+<script src="assets/js/core/utils.js"></script>
+<script src="assets/js/core/theme.js"></script>
+<script src="assets/js/core/toast.js"></script>
+<script src="assets/js/core/modal.js"></script>
+<script src="assets/js/core/cart.js"></script>
+<script src="assets/js/core/analytics.js"></script>
+<script src="assets/js/components/product-card.js"></script>
+<script src="assets/js/components/quick-view.js"></script>
+<script src="assets/js/components/header.js"></script>
+<script src="assets/js/components/footer.js"></script>
+<script src="assets/js/core/app-init.js"></script>
+<script src="assets/js/pages/cart.js"></script>
+</body>
+</html>

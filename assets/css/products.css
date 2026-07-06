@@ -1,0 +1,69 @@
+/* ==========================================================================
+   URBAN THREADS — PRODUCTS LISTING PAGE
+   ========================================================================== */
+
+.products-header { background: var(--bg-subtle); padding-block: var(--space-10); margin-bottom: var(--space-10); }
+.products-header h1 { font-size: var(--fs-3xl); }
+
+.products-layout { display: grid; grid-template-columns: 260px 1fr; gap: var(--space-10); align-items: start; }
+
+.filters-panel { position: sticky; top: calc(var(--nav-height) + var(--space-6)); }
+#filters-close-btn { display: none; }
+.filter-group { padding-block: var(--space-5); border-bottom: 1px solid var(--border-subtle); }
+.filter-group:first-child { padding-top: 0; }
+.filter-group-title { font-size: var(--fs-sm); font-weight: var(--fw-semibold); margin-bottom: var(--space-4); display: flex; justify-content: space-between; align-items: center; }
+.filter-option { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) 0; font-size: var(--fs-sm); cursor: pointer; color: var(--text-secondary); }
+.filter-option:hover { color: var(--text-primary); }
+.filter-option input { accent-color: var(--accent); width: 16px; height: 16px; }
+.filter-option .count { margin-left: auto; color: var(--text-tertiary); font-size: var(--fs-xs); }
+
+.size-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-2); }
+.size-grid .size-pill { text-align: center; }
+
+.price-range { padding-top: var(--space-2); }
+.price-range input[type="range"] { width: 100%; accent-color: var(--accent); }
+.price-range-value { display: flex; justify-content: space-between; font-size: var(--fs-xs); color: var(--text-secondary); margin-top: var(--space-2); }
+
+.toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  margin-bottom: var(--space-6); flex-wrap: wrap;
+}
+.toolbar-left { display: flex; align-items: center; gap: var(--space-4); }
+.filter-toggle-btn { display: none; }
+.results-count { font-size: var(--fs-sm); color: var(--text-secondary); }
+.toolbar-search { position: relative; width: 260px; }
+.toolbar-search input { padding-left: 2.6rem; }
+.toolbar-search svg { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); width: 17px; height: 17px; color: var(--text-tertiary); }
+
+.pagination { display: flex; justify-content: center; align-items: center; gap: var(--space-2); margin-top: var(--space-12); }
+.page-btn {
+  min-width: 40px; height: 40px; border-radius: var(--radius-sm); font-size: var(--fs-sm); font-weight: var(--fw-medium);
+  color: var(--text-secondary); display: flex; align-items: center; justify-content: center;
+}
+.page-btn:hover { background: var(--bg-muted); }
+.page-btn.active { background: var(--bg-inverse); color: var(--text-inverse); }
+.page-btn:disabled { opacity: 0.35; pointer-events: none; }
+
+.active-filters { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-6); }
+.active-filter-chip {
+  display: flex; align-items: center; gap: var(--space-2); background: var(--bg-muted); border-radius: var(--radius-full);
+  padding: 0.4rem 0.5rem 0.4rem 0.9rem; font-size: var(--fs-xs); font-weight: var(--fw-medium);
+}
+.active-filter-chip button { display: flex; color: var(--text-tertiary); }
+.active-filter-chip button:hover { color: var(--text-primary); }
+.active-filter-chip svg { width: 12px; height: 12px; }
+
+@media (max-width: 960px) {
+  .products-layout { grid-template-columns: 1fr; }
+  .filters-panel {
+    position: fixed; top: 0; left: 0; height: 100%; width: min(320px, 84vw); background: var(--bg-elevated);
+    z-index: var(--z-drawer); padding: var(--space-6); overflow-y: auto; box-shadow: var(--shadow-xl);
+    transform: translateX(-100%); transition: transform var(--dur-slow) var(--ease-out);
+  }
+  .filters-panel.open { transform: translateX(0); }
+  .filter-toggle-btn { display: inline-flex; }
+  #filters-close-btn { display: flex; }
+  .toolbar-search { width: 100%; order: 3; }
+  .toolbar { flex-direction: column; align-items: stretch; }
+  .toolbar-left { justify-content: space-between; }
+}

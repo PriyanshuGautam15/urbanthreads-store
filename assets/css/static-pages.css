@@ -1,0 +1,63 @@
+/* ==========================================================================
+   URBAN THREADS — ABOUT / CONTACT / 404 SHARED STYLES
+   ========================================================================== */
+
+/* ---------- Page hero (About / Contact) ---------- */
+.page-hero { position: relative; min-height: 46vh; display: flex; align-items: center; background: var(--bg-inverse); overflow: hidden; }
+.page-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.45; }
+.page-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,12,0.3), rgba(10,10,12,0.8)); }
+.page-hero-content { position: relative; z-index: 2; color: #fff; }
+.page-hero-content h1 { font-size: clamp(2.2rem, 5vw, var(--fs-5xl)); margin-top: var(--space-3); }
+
+/* ---------- About: story split ---------- */
+.story-split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center; }
+.story-split img { border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); aspect-ratio: 4/5; object-fit: cover; }
+.story-split p { color: var(--text-secondary); line-height: var(--lh-loose); margin-bottom: var(--space-4); }
+
+.mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+.mv-card { padding: var(--space-8); }
+.mv-icon { width: 52px; height: 52px; border-radius: var(--radius-md); background: var(--accent-soft); color: var(--text-accent); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-5); }
+.mv-icon svg { width: 24px; height: 24px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); text-align: center; }
+.stat-item .stat-counter { font-size: var(--fs-5xl); font-weight: var(--fw-black); color: var(--text-accent); display: block; }
+.stat-item p { color: var(--text-secondary); margin-top: var(--space-2); font-size: var(--fs-sm); }
+
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); }
+.team-card { text-align: center; }
+.team-card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: var(--space-4); }
+.team-card h4 { font-size: var(--fs-md); margin-bottom: 2px; }
+.team-card p { color: var(--text-tertiary); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: var(--tracking-wide); }
+
+/* ---------- Contact ---------- */
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: start; }
+.contact-info-item { display: flex; gap: var(--space-4); padding-block: var(--space-5); border-bottom: 1px solid var(--border-subtle); }
+.contact-info-icon { width: 44px; height: 44px; border-radius: var(--radius-sm); background: var(--accent-soft); color: var(--text-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-info-icon svg { width: 20px; height: 20px; }
+.map-placeholder {
+  aspect-ratio: 16/9; border-radius: var(--radius-lg); overflow: hidden; position: relative;
+  background: linear-gradient(135deg, var(--gray-200), var(--gray-100));
+  display: flex; align-items: center; justify-content: center; margin-top: var(--space-6);
+}
+:root[data-theme="dark"] .map-placeholder { background: linear-gradient(135deg, var(--gray-850), var(--gray-800)); }
+.map-placeholder svg { width: 40px; height: 40px; color: var(--text-tertiary); }
+.map-pin { position: absolute; color: var(--danger); }
+
+.faq-item { border-bottom: 1px solid var(--border-subtle); }
+
+/* ---------- 404 ---------- */
+.error-page { min-height: calc(100vh - var(--nav-height)); display: flex; align-items: center; justify-content: center; text-align: center; padding: var(--space-16); }
+.error-code {
+  font-size: clamp(6rem, 20vw, 12rem); font-weight: var(--fw-black); line-height: 1;
+  background: linear-gradient(135deg, var(--text-primary), var(--text-accent));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.error-illustration { width: 140px; margin: 0 auto var(--space-6); color: var(--text-accent); }
+
+@media (max-width: 900px) {
+  .story-split { grid-template-columns: 1fr; }
+  .mv-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-layout { grid-template-columns: 1fr; }
+}

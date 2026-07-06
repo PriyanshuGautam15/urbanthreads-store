@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Urban Threads</title>
+<meta name="description" content="Get in touch with the Urban Threads team — store info, contact form, and frequently asked questions.">
+<link rel="canonical" href="https://urbanthreads.example.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Urban Threads">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/static-pages.css">
+</head>
+<body data-page="contact" data-base="">
+
+<div id="ut-header"></div>
+
+<main id="main-content">
+
+  <section class="page-hero" style="min-height:32vh">
+    <div class="page-hero-bg" style="background-image:url('https://picsum.photos/seed/ut-contact-hero/1800/800')"></div>
+    <div class="container page-hero-content">
+      <p class="eyebrow" style="color:var(--brand-accent-300)">We'd love to hear from you</p>
+      <h1>Get in Touch</h1>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="contact-layout">
+      <div>
+        <h2 class="text-h3" style="margin-bottom:var(--space-6)">Send Us a Message</h2>
+        <form id="contact-form" class="card card-pad">
+          <div class="field-row">
+            <div class="field">
+              <label class="label" for="cf-name">Name</label>
+              <input class="input" id="cf-name" required placeholder="Your name">
+            </div>
+            <div class="field">
+              <label class="label" for="cf-email">Email</label>
+              <input class="input" type="email" id="cf-email" required placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="cf-subject">Subject</label>
+            <input class="input" id="cf-subject" required placeholder="How can we help?">
+          </div>
+          <div class="field">
+            <label class="label" for="cf-message">Message</label>
+            <textarea class="textarea" id="cf-message" required placeholder="Tell us more..." style="min-height:140px"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="text-h3" style="margin-bottom:var(--space-6)">Store Information</h2>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><strong>Flagship Store</strong><p class="text-secondary">42 Fashion Street, Bandra West, Mumbai 400050, India</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L8 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg></div>
+          <div><strong>Call Us</strong><p class="text-secondary">+91 98765 43210 · Mon–Sat, 10am–7pm</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></div>
+          <div><strong>Email Us</strong><p class="text-secondary">support@urbanthreads.com</p></div>
+        </div>
+        <div class="map-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-6-3V4l6 3 6-3 6 3v13l-6-3-6 3z"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="faq">
+    <div class="section-head" style="justify-content:center;flex-direction:column;text-align:center">
+      <p class="eyebrow">Need help?</p>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div style="max-width:760px;margin:0 auto">
+      <div class="faq-item accordion-item open">
+        <button class="accordion-trigger">What is your return policy? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="accordion-content"><div class="accordion-content-inner">We offer a 30-day return and exchange window on all unworn items with tags attached. Refunds are processed within 5-7 business days.</div></div>
+      </div>
+      <div class="faq-item accordion-item">
+        <button class="accordion-trigger">How long does shipping take? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="accordion-content"><div class="accordion-content-inner">Standard delivery takes 2-4 business days across India. Express shipping is free on orders over ₹2,999.</div></div>
+      </div>
+      <div class="faq-item accordion-item">
+        <button class="accordion-trigger">Do you ship internationally? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="accordion-content"><div class="accordion-content-inner">Yes, we currently ship to over 35 countries. International delivery times and duties vary by destination.</div></div>
+      </div>
+      <div class="faq-item accordion-item">
+        <button class="accordion-trigger">How do I track my order? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="accordion-content"><div class="accordion-content-inner">Once your order is confirmed via WhatsApp, our team will share tracking details directly in the chat as soon as it ships.</div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="ut-footer"></div>
+
+<script src="assets/js/core/sanity-client.js"></script>
+<script src="assets/js/core/db.js"></script>
+<script src="assets/js/core/utils.js"></script>
+<script src="assets/js/core/theme.js"></script>
+<script src="assets/js/core/toast.js"></script>
+<script src="assets/js/core/modal.js"></script>
+<script src="assets/js/core/cart.js"></script>
+<script src="assets/js/core/analytics.js"></script>
+<script src="assets/js/components/product-card.js"></script>
+<script src="assets/js/components/quick-view.js"></script>
+<script src="assets/js/components/header.js"></script>
+<script src="assets/js/components/footer.js"></script>
+<script src="assets/js/core/app-init.js"></script>
+<script src="assets/js/pages/contact.js"></script>
+</body>
+</html>
